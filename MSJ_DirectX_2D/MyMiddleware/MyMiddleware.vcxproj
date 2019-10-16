@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6481D68-BBD1-44EF-A5E0-C67AEB2CFFD3}</ProjectGuid>
+    <RootNamespace>MyMiddleware</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\Bin\</OutDir>
+    <TargetName>$(ProjectName)Debugx64</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\MyEngine\;..\ThirdParty\DirectXTex-master\DirectXTex\;..\ThirdParty\FW1FontWrapper-master\FW1FontWrapper\Source\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\Bin\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)Releasex64</TargetName>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\MyEngine\;..\ThirdParty\DirectXTex-master\DirectXTex\;..\ThirdParty\FW1FontWrapper-master\FW1FontWrapper\Source\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64;..\Bin\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <TargetName>$(ProjectName)Release32</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\MyEngine\;..\ThirdParty\DirectXTex-master\DirectXTex\;..\ThirdParty\FW1FontWrapper-master\FW1FontWrapper\Source\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;..\Bin\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Bin\</OutDir>
+    <TargetName>$(ProjectName)Debug32</TargetName>
+    <TargetExt>.lib</TargetExt>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\MyEngine\;..\ThirdParty\DirectXTex-master\DirectXTex\;..\ThirdParty\FW1FontWrapper-master\FW1FontWrapper\Source\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;..\Bin\;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="BEEffect.h" />
+    <ClInclude Include="BELaser.h" />
+    <ClInclude Include="BGFade.h" />
+    <ClInclude Include="BG_PinkbinCloudMove.h" />
+    <ClInclude Include="BG_TownScript.h" />
+    <ClInclude Include="BlizzardHit.h" />
+    <ClInclude Include="BlizzardHitEffect.h" />
+    <ClInclude Include="BlizzardIce.h" />
+    <ClInclude Include="BlizzardIcePillar.h" />
+    <ClInclude Include="BossMonster_HP.h" />
+    <ClInclude Include="CataclysmEffectValue.h" />
+    <ClInclude Include="CataclysmHit.h" />
+    <ClInclude Include="CataclysmScene.h" />
+    <ClInclude Include="CataclysmSceneBase.h" />
+    <ClInclude Include="ChildManneqin.h" />
+    <ClInclude Include="CoolTimeScript.h" />
+    <ClInclude Include="DamageSkinMoveScript.h" />
+    <ClInclude Include="EnumOrder.h" />
+    <ClInclude Include="FSMState.h" />
+    <ClInclude Include="GameObjetFindManager.h" />
+    <ClInclude Include="GeneralMonster_HP.h" />
+    <ClInclude Include="HPBarMoveScript.h" />
+    <ClInclude Include="InGameCamera.h" />
+    <ClInclude Include="Inven_BtAnimation.h" />
+    <ClInclude Include="Inven_BtKind.h" />
+    <ClInclude Include="Inven_Info.h" />
+    <ClInclude Include="Inven_MouseItem.h" />
+    <ClInclude Include="Inven_MoveScript.h" />
+    <ClInclude Include="ItemCode.h" />
+    <ClInclude Include="ItemKind.h" />
+    <ClInclude Include="ItemMoveScript.h" />
+    <ClInclude Include="LandMapScript.h" />
+    <ClInclude Include="LandRenderer.h" />
+    <ClInclude Include="MapleGlobalValue.h" />
+    <ClInclude Include="MapScript.h" />
+    <ClInclude Include="MesoManager.h" />
+    <ClInclude Include="MiddleStart.h" />
+    <ClInclude Include="MonsterDamageSkin.h" />
+    <ClInclude Include="MonsterHitScript.h" />
+    <ClInclude Include="MonsterState.h" />
+    <ClInclude Include="MouseCursorScript.h" />
+    <ClInclude Include="MoveScript.h" />
+    <ClInclude Include="NPCState.h" />
+    <ClInclude Include="NPC_NONE.h" />
+    <ClInclude Include="NPC_PotionMerchant.h" />
+    <ClInclude Include="NPC_RockSpirit.h" />
+    <ClInclude Include="NPC_SmallSpirit.h" />
+    <ClInclude Include="NPC_TreeSpirit.h" />
+    <ClInclude Include="NPC_WarehouseKeeper.h" />
+    <ClInclude Include="NPC_WindSpirit.h" />
+    <ClInclude Include="Pinkbin.h" />
+    <ClInclude Include="PinkbinHPBar.h" />
+    <ClInclude Include="PinkbinRegen.h" />
+    <ClInclude Include="Pinkbin_AttackEffect.h" />
+    <ClInclude Include="PlayerAnimation.h" />
+    <ClInclude Include="PlayerMove.h" />
+    <ClInclude Include="PoisonCloud.h" />
+    <ClInclude Include="QuestAlarm.h" />
+    <ClInclude Include="QuestAlarmElixirNumberScript.h" />
+    <ClInclude Include="QuestDialogSituation.h" />
+    <ClInclude Include="QuickSlotScript.h" />
+    <ClInclude Include="QuickSlot_Kind.h" />
+    <ClInclude Include="RenderOrder.h" />
+    <ClInclude Include="SBlazingExtinction.h" />
+    <ClInclude Include="SBlizzard.h" />
+    <ClInclude Include="SCataclysm.h" />
+    <ClInclude Include="ShopBuyItemNumber.h" />
+    <ClInclude Include="ShopSellItemManagerScript.h" />
+    <ClInclude Include="ShopBuyItemBt.h" />
+    <ClInclude Include="SkillManager.h" />
+    <ClInclude Include="SPoisonMist.h" />
+    <ClInclude Include="SSoulPenetration.h" />
+    <ClInclude Include="ToolCamera.h" />
+    <ClInclude Include="TownPortalAniScript.h" />
+    <ClInclude Include="TransformSlime.h" />
+    <ClInclude Include="UIMove.h" />
+    <ClInclude Include="Velaris.h" />
+    <ClInclude Include="Weather_Snow.h" />
+    <ClInclude Include="WhiteSandRabbit.h" />
+    <ClInclude Include="WorldMouseCursorScript.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BEEffect.cpp" />
+    <ClCompile Include="BELaser.cpp" />
+    <ClCompile Include="BGFade.cpp" />
+    <ClCompile Include="BG_PinkbinCloudMove.cpp" />
+    <ClCompile Include="BG_TownScript.cpp" />
+    <ClCompile Include="BlizzardHit.cpp" />
+    <ClCompile Include="BlizzardHitEffect.cpp" />
+    <ClCompile Include="BlizzardIce.cpp" />
+    <ClCompile Include="BlizzardIcePillar.cpp" />
+    <ClCompile Include="BossMonster_HP.cpp" />
+    <ClCompile Include="CataclysmEffectValue.cpp" />
+    <ClCompile Include="CataclysmHit.cpp" />
+    <ClCompile Include="CataclysmScene.cpp" />
+    <ClCompile Include="CataclysmSceneBase.cpp" />
+    <ClCompile Include="ChildMannequinState.cpp" />
+    <ClCompile Include="ChildManneqin.cpp" />
+    <ClCompile Include="CoolTimeScript.cpp" />
+    <ClCompile Include="DamageSkinMoveScript.cpp" />
+    <ClCompile Include="GameObjetFindManager.cpp" />
+    <ClCompile Include="GeneralMonster_HP.cpp" />
+    <ClCompile Include="HPBarMoveScript.cpp" />
+    <ClCompile Include="InGameCamera.cpp" />
+    <ClCompile Include="Inven_BtAnimation.cpp" />
+    <ClCompile Include="Inven_BtKind.cpp" />
+    <ClCompile Include="Inven_Info.cpp" />
+    <ClCompile Include="Inven_MouseItem.cpp" />
+    <ClCompile Include="Inven_MoveScript.cpp" />
+    <ClCompile Include="ItemMoveScript.cpp" />
+    <ClCompile Include="LandMapScript.cpp" />
+    <ClCompile Include="LandRenderer.cpp" />
+    <ClCompile Include="MapleGlobalValue.cpp" />
+    <ClCompile Include="MapScript.cpp" />
+    <ClCompile Include="MesoManager.cpp" />
+    <ClCompile Include="MiddleStart.cpp" />
+    <ClCompile Include="MonsterDamageSkin.cpp" />
+    <ClCompile Include="MonsterHitScript.cpp" />
+    <ClCompile Include="MouseCursorScript.cpp" />
+    <ClCompile Include="MoveScript.cpp" />
+    <ClCompile Include="NPC_NONE.cpp" />
+    <ClCompile Include="NPC_PotionMerchant.cpp" />
+    <ClCompile Include="NPC_RockSpirit.cpp" />
+    <ClCompile Include="NPC_SmallSpirit.cpp" />
+    <ClCompile Include="NPC_TreeSpirit.cpp" />
+    <ClCompile Include="NPC_WarehouseKeeper.cpp" />
+    <ClCompile Include="NPC_WindSpirit.cpp" />
+    <ClCompile Include="Pinkbin.cpp" />
+    <ClCompile Include="PinkbinGetSet.cpp" />
+    <ClCompile Include="PinkbinHPBar.cpp" />
+    <ClCompile Include="PinkbinRegen.cpp" />
+    <ClCompile Include="PinkbinState.cpp" />
+    <ClCompile Include="Pinkbin_AttackEffect.cpp" />
+    <ClCompile Include="PlayerAnimation.cpp" />
+    <ClCompile Include="PlayerMove.cpp" />
+    <ClCompile Include="PlayerMoveState.cpp" />
+    <ClCompile Include="PoisonCloud.cpp" />
+    <ClCompile Include="QuestAlarm.cpp" />
+    <ClCompile Include="QuestAlarmElixirNumberScript.cpp" />
+    <ClCompile Include="QuickSlotScript.cpp" />
+    <ClCompile Include="SBlazingExtinction.cpp" />
+    <ClCompile Include="SBlizzard.cpp" />
+    <ClCompile Include="SCataclysm.cpp" />
+    <ClCompile Include="ShopBuyItemNumber.cpp" />
+    <ClCompile Include="ShopSellItemManagerScript.cpp" />
+    <ClCompile Include="ShopBuyItemBt.cpp" />
+    <ClCompile Include="SkillManager_SkillKind.cpp" />
+    <ClCompile Include="SkillManager.cpp" />
+    <ClCompile Include="SPoisonMist.cpp" />
+    <ClCompile Include="SSoulPenetration.cpp" />
+    <ClCompile Include="ToolCamera.cpp" />
+    <ClCompile Include="TownPortalAniScript.cpp" />
+    <ClCompile Include="TransformSlime.cpp" />
+    <ClCompile Include="TransformSlimeState.cpp" />
+    <ClCompile Include="TrnasformSlimeGetSet.cpp" />
+    <ClCompile Include="UIMove.cpp" />
+    <ClCompile Include="Velaris.cpp" />
+    <ClCompile Include="VelarisFunc.cpp" />
+    <ClCompile Include="VelarisGetSet.cpp" />
+    <ClCompile Include="VelarisState.cpp" />
+    <ClCompile Include="Weather_Snow.cpp" />
+    <ClCompile Include="WhiteSandRabbit.cpp" />
+    <ClCompile Include="WhiteSandRabbitGetSet.cpp" />
+    <ClCompile Include="WhiteSandRabbitState.cpp" />
+    <ClCompile Include="WorldMouseCursorScript.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyEngine\MyEngine.vcxproj">
+      <Project>{3d7164af-853e-4453-8c1b-4df3a793d86c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ThirdParty\DirectXTex-master\DirectXTex\DirectXTex_Desktop_2015_Win10.vcxproj">
+      <Project>{371b9fa9-4c90-4ac6-a123-aced756d6c77}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="PlayerMove.h">
+      <Filter>InGame\Player\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerAnimation.h">
+      <Filter>InGame\Player\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="FSMState.h">
+      <Filter>InGame\Player\Move\State</Filter>
+    </ClInclude>
+    <ClInclude Include="MiddleStart.h">
+      <Filter>Main_KEY_PATH</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveScript.h">
+      <Filter>Main_KEY_PATH</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjetFindManager.h" />
+    <ClInclude Include="MapScript.h">
+      <Filter>Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="LandRenderer.h">
+      <Filter>Tool\LandRend</Filter>
+    </ClInclude>
+    <ClInclude Include="LandMapScript.h">
+      <Filter>Tool\LandRend</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCamera.h">
+      <Filter>Tool\ToolCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="InGameCamera.h">
+      <Filter>InGame\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillManager.h">
+      <Filter>InGame\Player\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="SBlizzard.h">
+      <Filter>InGame\Player\Skill\Sub\Blizzard</Filter>
+    </ClInclude>
+    <ClInclude Include="SPoisonMist.h">
+      <Filter>InGame\Player\Skill\Sub\PoisonMist</Filter>
+    </ClInclude>
+    <ClInclude Include="SSoulPenetration.h">
+      <Filter>InGame\Player\Skill\Sub\SoulPenetration</Filter>
+    </ClInclude>
+    <ClInclude Include="SBlazingExtinction.h">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction</Filter>
+    </ClInclude>
+    <ClInclude Include="BELaser.h">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction\Laser</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderOrder.h">
+      <Filter>InGame\RenderOrder</Filter>
+    </ClInclude>
+    <ClInclude Include="BEEffect.h">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="PoisonCloud.h">
+      <Filter>InGame\Player\Skill\Sub\PoisonMist\PoisonCloud</Filter>
+    </ClInclude>
+    <ClInclude Include="SCataclysm.h">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm</Filter>
+    </ClInclude>
+    <ClInclude Include="CataclysmHit.h">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="CataclysmEffectValue.h">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Effect0</Filter>
+    </ClInclude>
+    <ClInclude Include="CataclysmScene.h">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CataclysmSceneBase.h">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BlizzardHit.h">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="BlizzardIce.h">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="BlizzardIcePillar.h">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\IcePillar</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterState.h">
+      <Filter>InGame\Monster\State</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildManneqin.h">
+      <Filter>InGame\Monster\General\ChildMannequin</Filter>
+    </ClInclude>
+    <ClInclude Include="WhiteSandRabbit.h">
+      <Filter>InGame\Monster\General\WhiteSandRabbit</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformSlime.h">
+      <Filter>InGame\Monster\General\TransformSlime</Filter>
+    </ClInclude>
+    <ClInclude Include="Velaris.h">
+      <Filter>InGame\Monster\General\Velaris</Filter>
+    </ClInclude>
+    <ClInclude Include="Pinkbin.h">
+      <Filter>InGame\Monster\Boss\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="PinkbinRegen.h">
+      <Filter>InGame\Monster\Boss\Regen</Filter>
+    </ClInclude>
+    <ClInclude Include="Pinkbin_AttackEffect.h">
+      <Filter>InGame\Monster\Boss\Skill_Attack</Filter>
+    </ClInclude>
+    <ClInclude Include="BG_TownScript.h">
+      <Filter>InGame\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="NPCState.h">
+      <Filter>InGame\NPC\State</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_NONE.h">
+      <Filter>InGame\NPC\NONE</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_RockSpirit.h">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_SmallSpirit.h">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_TreeSpirit.h">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_WindSpirit.h">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_PotionMerchant.h">
+      <Filter>InGame\NPC\Merchant</Filter>
+    </ClInclude>
+    <ClInclude Include="NPC_WarehouseKeeper.h">
+      <Filter>InGame\NPC\Merchant</Filter>
+    </ClInclude>
+    <ClInclude Include="TownPortalAniScript.h">
+      <Filter>InGame\Portal</Filter>
+    </ClInclude>
+    <ClInclude Include="Weather_Snow.h">
+      <Filter>InGame\Weather</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralMonster_HP.h">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClInclude>
+    <ClInclude Include="BossMonster_HP.h">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClInclude>
+    <ClInclude Include="HPBarMoveScript.h">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMove.h">
+      <Filter>InGame\UI\Etc</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven_BtAnimation.h">
+      <Filter>InGame\UI\Inventory\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven_BtKind.h">
+      <Filter>InGame\UI\Inventory\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseCursorScript.h">
+      <Filter>InGame\UI\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven_Info.h">
+      <Filter>InGame\UI\Inventory\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemCode.h">
+      <Filter>InGame\UI\Inventory\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven_MouseItem.h">
+      <Filter>InGame\UI\Inventory\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemKind.h">
+      <Filter>InGame\UI\Inventory\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="Inven_MoveScript.h">
+      <Filter>InGame\UI\Inventory\Move</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSlotScript.h">
+      <Filter>InGame\UI\QuickSlot</Filter>
+    </ClInclude>
+    <ClInclude Include="QuickSlot_Kind.h">
+      <Filter>InGame\UI\QuickSlot</Filter>
+    </ClInclude>
+    <ClInclude Include="CoolTimeScript.h">
+      <Filter>InGame\UI\QuickSlot\CoolTime</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldMouseCursorScript.h">
+      <Filter>InGame\UI\Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopBuyItemBt.h">
+      <Filter>InGame\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumOrder.h">
+      <Filter>InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopSellItemManagerScript.h">
+      <Filter>InGame\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="ShopBuyItemNumber.h">
+      <Filter>InGame\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="MesoManager.h" />
+    <ClInclude Include="QuestAlarm.h">
+      <Filter>InGame\Quest\NPCAlarmTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestAlarmElixirNumberScript.h">
+      <Filter>InGame\Quest\Alarm</Filter>
+    </ClInclude>
+    <ClInclude Include="QuestDialogSituation.h">
+      <Filter>InGame\Quest\DialogChangeHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="MapleGlobalValue.h">
+      <Filter>InGame\SceneInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="BlizzardHitEffect.h">
+      <Filter>InGame\Player\Skill\HitEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterHitScript.h">
+      <Filter>InGame\Monster\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterDamageSkin.h">
+      <Filter>InGame\DamageSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageSkinMoveScript.h">
+      <Filter>InGame\DamageSkin</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemMoveScript.h">
+      <Filter>InGame\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="BG_PinkbinCloudMove.h">
+      <Filter>InGame\Background</Filter>
+    </ClInclude>
+    <ClInclude Include="PinkbinHPBar.h">
+      <Filter>InGame\Monster\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="BGFade.h">
+      <Filter>InGame\Title</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlayerMove.cpp">
+      <Filter>InGame\Player\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerAnimation.cpp">
+      <Filter>InGame\Player\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerMoveState.cpp">
+      <Filter>InGame\Player\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="MiddleStart.cpp">
+      <Filter>Main_KEY_PATH</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveScript.cpp">
+      <Filter>Main_KEY_PATH</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjetFindManager.cpp" />
+    <ClCompile Include="MapScript.cpp">
+      <Filter>Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="LandRenderer.cpp">
+      <Filter>Tool\LandRend</Filter>
+    </ClCompile>
+    <ClCompile Include="LandMapScript.cpp">
+      <Filter>Tool\LandRend</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCamera.cpp">
+      <Filter>Tool\ToolCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="InGameCamera.cpp">
+      <Filter>InGame\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillManager.cpp">
+      <Filter>InGame\Player\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillManager_SkillKind.cpp">
+      <Filter>InGame\Player\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="SBlizzard.cpp">
+      <Filter>InGame\Player\Skill\Sub\Blizzard</Filter>
+    </ClCompile>
+    <ClCompile Include="SPoisonMist.cpp">
+      <Filter>InGame\Player\Skill\Sub\PoisonMist</Filter>
+    </ClCompile>
+    <ClCompile Include="SSoulPenetration.cpp">
+      <Filter>InGame\Player\Skill\Sub\SoulPenetration</Filter>
+    </ClCompile>
+    <ClCompile Include="SBlazingExtinction.cpp">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction</Filter>
+    </ClCompile>
+    <ClCompile Include="BELaser.cpp">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction\Laser</Filter>
+    </ClCompile>
+    <ClCompile Include="BEEffect.cpp">
+      <Filter>InGame\Player\Skill\Sub\BlazingExtinction\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="PoisonCloud.cpp">
+      <Filter>InGame\Player\Skill\Sub\PoisonMist\PoisonCloud</Filter>
+    </ClCompile>
+    <ClCompile Include="SCataclysm.cpp">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm</Filter>
+    </ClCompile>
+    <ClCompile Include="CataclysmHit.cpp">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="CataclysmEffectValue.cpp">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Effect0</Filter>
+    </ClCompile>
+    <ClCompile Include="CataclysmScene.cpp">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CataclysmSceneBase.cpp">
+      <Filter>InGame\Player\Skill\Sub\Cataclysm\Sub\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="BlizzardHit.cpp">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="BlizzardIce.cpp">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="BlizzardIcePillar.cpp">
+      <Filter>InGame\Player\Skill\Sub\Blizzard\Sub\IcePillar</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildManneqin.cpp">
+      <Filter>InGame\Monster\General\ChildMannequin</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildMannequinState.cpp">
+      <Filter>InGame\Monster\General\ChildMannequin</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteSandRabbit.cpp">
+      <Filter>InGame\Monster\General\WhiteSandRabbit</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteSandRabbitState.cpp">
+      <Filter>InGame\Monster\General\WhiteSandRabbit</Filter>
+    </ClCompile>
+    <ClCompile Include="WhiteSandRabbitGetSet.cpp">
+      <Filter>InGame\Monster\General\WhiteSandRabbit</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformSlime.cpp">
+      <Filter>InGame\Monster\General\TransformSlime</Filter>
+    </ClCompile>
+    <ClCompile Include="TrnasformSlimeGetSet.cpp">
+      <Filter>InGame\Monster\General\TransformSlime</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformSlimeState.cpp">
+      <Filter>InGame\Monster\General\TransformSlime</Filter>
+    </ClCompile>
+    <ClCompile Include="Velaris.cpp">
+      <Filter>InGame\Monster\General\Velaris</Filter>
+    </ClCompile>
+    <ClCompile Include="VelarisState.cpp">
+      <Filter>InGame\Monster\General\Velaris</Filter>
+    </ClCompile>
+    <ClCompile Include="VelarisGetSet.cpp">
+      <Filter>InGame\Monster\General\Velaris</Filter>
+    </ClCompile>
+    <ClCompile Include="VelarisFunc.cpp">
+      <Filter>InGame\Monster\General\Velaris</Filter>
+    </ClCompile>
+    <ClCompile Include="Pinkbin.cpp">
+      <Filter>InGame\Monster\Boss\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkbinGetSet.cpp">
+      <Filter>InGame\Monster\Boss\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkbinState.cpp">
+      <Filter>InGame\Monster\Boss\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkbinRegen.cpp">
+      <Filter>InGame\Monster\Boss\Regen</Filter>
+    </ClCompile>
+    <ClCompile Include="Pinkbin_AttackEffect.cpp">
+      <Filter>InGame\Monster\Boss\Skill_Attack</Filter>
+    </ClCompile>
+    <ClCompile Include="BG_TownScript.cpp">
+      <Filter>InGame\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_NONE.cpp">
+      <Filter>InGame\NPC\NONE</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_RockSpirit.cpp">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_SmallSpirit.cpp">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_TreeSpirit.cpp">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_WindSpirit.cpp">
+      <Filter>InGame\NPC\NPC</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_PotionMerchant.cpp">
+      <Filter>InGame\NPC\Merchant</Filter>
+    </ClCompile>
+    <ClCompile Include="NPC_WarehouseKeeper.cpp">
+      <Filter>InGame\NPC\Merchant</Filter>
+    </ClCompile>
+    <ClCompile Include="TownPortalAniScript.cpp">
+      <Filter>InGame\Portal</Filter>
+    </ClCompile>
+    <ClCompile Include="Weather_Snow.cpp">
+      <Filter>InGame\Weather</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralMonster_HP.cpp">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClCompile>
+    <ClCompile Include="BossMonster_HP.cpp">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClCompile>
+    <ClCompile Include="HPBarMoveScript.cpp">
+      <Filter>InGame\Monster\HPBar</Filter>
+    </ClCompile>
+    <ClCompile Include="UIMove.cpp">
+      <Filter>InGame\UI\Etc</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven_BtAnimation.cpp">
+      <Filter>InGame\UI\Inventory\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven_BtKind.cpp">
+      <Filter>InGame\UI\Inventory\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseCursorScript.cpp">
+      <Filter>InGame\UI\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven_Info.cpp">
+      <Filter>InGame\UI\Inventory\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven_MouseItem.cpp">
+      <Filter>InGame\UI\Inventory\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Inven_MoveScript.cpp">
+      <Filter>InGame\UI\Inventory\Move</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSlotScript.cpp">
+      <Filter>InGame\UI\QuickSlot</Filter>
+    </ClCompile>
+    <ClCompile Include="CoolTimeScript.cpp">
+      <Filter>InGame\UI\QuickSlot\CoolTime</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldMouseCursorScript.cpp">
+      <Filter>InGame\UI\Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopBuyItemBt.cpp">
+      <Filter>InGame\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopSellItemManagerScript.cpp">
+      <Filter>InGame\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="ShopBuyItemNumber.cpp">
+      <Filter>InGame\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="MesoManager.cpp" />
+    <ClCompile Include="QuestAlarm.cpp">
+      <Filter>InGame\Quest\NPCAlarmTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="QuestAlarmElixirNumberScript.cpp">
+      <Filter>InGame\Quest\Alarm</Filter>
+    </ClCompile>
+    <ClCompile Include="MapleGlobalValue.cpp">
+      <Filter>InGame\SceneInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="BlizzardHitEffect.cpp">
+      <Filter>InGame\Player\Skill\HitEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterHitScript.cpp">
+      <Filter>InGame\Monster\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterDamageSkin.cpp">
+      <Filter>InGame\DamageSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="DamageSkinMoveScript.cpp">
+      <Filter>InGame\DamageSkin</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemMoveScript.cpp">
+      <Filter>InGame\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="BG_PinkbinCloudMove.cpp">
+      <Filter>InGame\Background</Filter>
+    </ClCompile>
+    <ClCompile Include="PinkbinHPBar.cpp">
+      <Filter>InGame\Monster\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="BGFade.cpp">
+      <Filter>InGame\Title</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Main_KEY_PATH">
+      <UniqueIdentifier>{f4f33588-fc91-4568-8976-a5290db2a332}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame">
+      <UniqueIdentifier>{293777b5-28e4-40fb-a654-7ae36c7eedfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool">
+      <UniqueIdentifier>{c4fdb482-ba8b-4b75-9edc-5583693c110f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\LandRend">
+      <UniqueIdentifier>{782351be-3e6d-4c07-96e9-4ff6ca2d7b26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tool\ToolCamera">
+      <UniqueIdentifier>{190da131-56cd-454d-92ee-6a809725852c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player">
+      <UniqueIdentifier>{246d518d-6814-46d5-8066-f29db8b10a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Move">
+      <UniqueIdentifier>{ea222a05-2e3d-4e2a-9716-9f596fc1573a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Animation">
+      <UniqueIdentifier>{922b0fae-7446-4fa2-b2ee-7fc6bb501633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Camera">
+      <UniqueIdentifier>{b277d81e-df40-428d-bab0-8c3993307aa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI">
+      <UniqueIdentifier>{aacbd4bc-e92b-4ff0-a969-7d55d3300d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Move\State">
+      <UniqueIdentifier>{b4d4c636-5149-4837-8207-7a2566cdcb58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill">
+      <UniqueIdentifier>{f48458c8-4be5-4d96-a030-dfa0535b2689}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub">
+      <UniqueIdentifier>{81bbf3ca-0e7a-4730-ad0e-5735036e46a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\BlazingExtinction">
+      <UniqueIdentifier>{d32a9235-2494-438f-9e2c-530d9b47546f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Blizzard">
+      <UniqueIdentifier>{fe546faa-7a65-41a2-a7e3-e58ffac87f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\PoisonMist">
+      <UniqueIdentifier>{f6d5517d-67b2-4057-8174-f5eaba8d1bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\SoulPenetration">
+      <UniqueIdentifier>{1149f8a1-a067-4da6-a051-7e7697cad944}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\BlazingExtinction\Laser">
+      <UniqueIdentifier>{ebe45c6d-305b-4573-8733-2505b8506429}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\BlazingExtinction\Effect">
+      <UniqueIdentifier>{fced35b5-f4c4-4be7-bb08-db4ebfd8748a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\RenderOrder">
+      <UniqueIdentifier>{5c54543b-3ef9-44d9-8837-a87a633f9d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\PoisonMist\PoisonCloud">
+      <UniqueIdentifier>{a22b005d-8bdb-4661-99a4-4077b9d84fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\SoulPenetration\Sub">
+      <UniqueIdentifier>{93167283-0e17-4fcc-9b16-ee7cedc49f04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Cataclysm">
+      <UniqueIdentifier>{5f0f83c9-f443-4841-b7ac-aec20542355d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Cataclysm\Sub">
+      <UniqueIdentifier>{2e558c9c-d5a1-41e2-b5ea-eb10d1b5cf05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Cataclysm\Sub\Scene">
+      <UniqueIdentifier>{eca5a3a3-8e66-4c94-bc48-2949ae64d242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Cataclysm\Sub\Hit">
+      <UniqueIdentifier>{1f1abb27-9da0-4150-85fb-a083ad9cab7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Cataclysm\Sub\Effect0">
+      <UniqueIdentifier>{bda61151-6a92-4428-bd2b-a28586c37702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Blizzard\Sub">
+      <UniqueIdentifier>{71129ae5-7e2d-4407-a597-c347b200575e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Blizzard\Sub\Hit">
+      <UniqueIdentifier>{4f412309-583b-40c0-86d7-d84c92ddf83b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Blizzard\Sub\Ice">
+      <UniqueIdentifier>{6df35067-0967-405b-a5bf-0f3c9628a686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\Sub\Blizzard\Sub\IcePillar">
+      <UniqueIdentifier>{1069744e-1fcf-48f2-95ab-bcf6eb5ea840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster">
+      <UniqueIdentifier>{9b97b4ff-2420-4fd5-9396-8c8fea6d9ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\General">
+      <UniqueIdentifier>{cd1d1ab5-6c2a-49c5-9038-b44efcf6a217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\MidBoss">
+      <UniqueIdentifier>{d9d86ba1-fcce-4507-9a50-2943ba485a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Boss">
+      <UniqueIdentifier>{e4339ec8-2d5f-48fd-b7d4-b9f4c7b98ff4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\General\ChildMannequin">
+      <UniqueIdentifier>{1f0ce6b9-a101-4974-820f-e993e977390f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\General\WhiteSandRabbit">
+      <UniqueIdentifier>{cd39ee1a-9a5d-41e6-ad6f-ec1e83ed5f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\State">
+      <UniqueIdentifier>{27460582-ac49-437a-b43e-f0a3a0357621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\General\TransformSlime">
+      <UniqueIdentifier>{d697af2a-7fd0-49f9-aec7-2f9115a4b753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\General\Velaris">
+      <UniqueIdentifier>{88cf2eb2-6d8b-438f-90e3-dc096717ff8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Boss\Regen">
+      <UniqueIdentifier>{6d1ec939-acda-4bba-8936-10e4fc45e098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Boss\Monster">
+      <UniqueIdentifier>{7cd8bbbe-6c36-490e-a98b-ad6c813fab83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Boss\Skill_Attack">
+      <UniqueIdentifier>{1a5801aa-3e00-4708-94e4-5d03e2fc729c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Boss\HitEffect">
+      <UniqueIdentifier>{b719388e-8f32-467c-8183-566d2de72354}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Background">
+      <UniqueIdentifier>{3ee0f69c-4ee1-4c39-815e-35a799332045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\NPC">
+      <UniqueIdentifier>{7ae35d78-d4f6-4aaf-8b3f-28c3ed37c134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\NPC\State">
+      <UniqueIdentifier>{4243df62-6152-4c6d-a952-26e266a254d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\NPC\NONE">
+      <UniqueIdentifier>{f95dc80f-5167-4e6b-89e7-db9e8c79a4e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\NPC\NPC">
+      <UniqueIdentifier>{ace919c7-d036-4d37-8326-d192476922d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\NPC\Merchant">
+      <UniqueIdentifier>{abdbb809-43d8-4d4c-98d4-de0c303e3ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Portal">
+      <UniqueIdentifier>{b456b8c6-77a3-442c-9c04-55575698c78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Weather">
+      <UniqueIdentifier>{7080b34d-c274-4a3f-9075-cacded55dfd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\HPBar">
+      <UniqueIdentifier>{139d7b28-d936-4ab2-89ac-7e343d202243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Inventory">
+      <UniqueIdentifier>{4665af71-3f1e-4b0f-ab61-f9816af522ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Etc">
+      <UniqueIdentifier>{28236ecf-478a-4db0-88cb-bfc85565265c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Inventory\Button">
+      <UniqueIdentifier>{b5a95dca-95bf-4633-82bf-12dc1fd8b591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Inventory\Info">
+      <UniqueIdentifier>{682aabfc-a647-423b-8102-0c67cb1093f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Cursor">
+      <UniqueIdentifier>{7fa781be-3d2f-42c3-8506-78e5c59d820e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Inventory\Mouse">
+      <UniqueIdentifier>{b7406ab5-51bc-468a-baf0-218bbd6c6e43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Inventory\Move">
+      <UniqueIdentifier>{16da6a3c-0cd0-4e9c-9dda-aa3981ee30d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\QuickSlot">
+      <UniqueIdentifier>{2c1e9e56-f08c-452e-b5a9-9cb1a4699589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\QuickSlot\CoolTime">
+      <UniqueIdentifier>{c155e056-30bf-4919-b839-5d80be270f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Quest">
+      <UniqueIdentifier>{21edc361-995b-483b-927f-782e360a6b52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Shop">
+      <UniqueIdentifier>{ffc46832-663f-4309-abbf-aab738b2e793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\UI\Meso">
+      <UniqueIdentifier>{234e1d36-6ab2-428a-86b6-90f97f738cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Quest\Alarm">
+      <UniqueIdentifier>{1f18bd6e-94b2-407d-96f6-a8ba87b7964a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Quest\NPCAlarmTexture">
+      <UniqueIdentifier>{e6fb5b4b-f07a-4765-ba3e-cf28baffa7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Quest\DialogChangeHeader">
+      <UniqueIdentifier>{9b5f04c5-ceb2-4d48-b1a2-b0913a386e6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\SceneInfo">
+      <UniqueIdentifier>{030b21b3-4e58-4abe-a697-46ef3edabba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Player\Skill\HitEffect">
+      <UniqueIdentifier>{b1e5d01f-b9ac-4686-adbb-59cc287c6e45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Monster\Hit">
+      <UniqueIdentifier>{d63954df-6c02-4610-93dd-55f91dcd3dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\DamageSkin">
+      <UniqueIdentifier>{6ecc657b-3890-4de6-8ded-929f7129b7a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Item">
+      <UniqueIdentifier>{d53fb6bf-713f-4630-948c-c6d96242a24a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGame\Title">
+      <UniqueIdentifier>{cc4097b2-a9bf-4d34-8177-13cf9457baee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

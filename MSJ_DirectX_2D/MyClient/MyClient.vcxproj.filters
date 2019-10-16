@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="CoreBuilder.h" />
+    <ClInclude Include="MonsterCreator.h" />
+    <ClInclude Include="TextureLoadingScene.h">
+      <Filter>InGameScene\TextureLoading</Filter>
+    </ClInclude>
+    <ClInclude Include="TestGameScene.h">
+      <Filter>InGameScene\Test</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStageScene1.h">
+      <Filter>InGameScene\MonsterStage\1</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterStageScene2.h">
+      <Filter>InGameScene\MonsterStage\2</Filter>
+    </ClInclude>
+    <ClInclude Include="BossMonsterStageScene.h">
+      <Filter>InGameScene\MonsterStage\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="TownScene.h">
+      <Filter>InGameScene\Town</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleScene.h">
+      <Filter>InGameScene\Title</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CoreBuilder.cpp" />
+    <ClCompile Include="MonsterCreator.cpp" />
+    <ClCompile Include="TextureLoadingScene.cpp">
+      <Filter>InGameScene\TextureLoading</Filter>
+    </ClCompile>
+    <ClCompile Include="TestGameScene.cpp">
+      <Filter>InGameScene\Test</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStageScene1.cpp">
+      <Filter>InGameScene\MonsterStage\1</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterStageScene2.cpp">
+      <Filter>InGameScene\MonsterStage\2</Filter>
+    </ClCompile>
+    <ClCompile Include="BossMonsterStageScene.cpp">
+      <Filter>InGameScene\MonsterStage\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="TownScene.cpp">
+      <Filter>InGameScene\Town</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleScene.cpp">
+      <Filter>InGameScene\Title</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="InGameScene">
+      <UniqueIdentifier>{fea3fbdf-5c07-4595-ae3c-c81880cbdab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\TextureLoading">
+      <UniqueIdentifier>{21ab38f2-baf4-4bb3-99d5-9c4c572f9225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\Test">
+      <UniqueIdentifier>{fa3206bf-4a68-41f8-9063-5188acfd516b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\Town">
+      <UniqueIdentifier>{0f56f72f-8e17-4373-9fb8-d93460e9598f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\MonsterStage">
+      <UniqueIdentifier>{23fb149c-8189-4014-85da-76405b40c7c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\MonsterStage\1">
+      <UniqueIdentifier>{bd2bf078-b9d1-48d2-8fc3-0f50adc73462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\MonsterStage\2">
+      <UniqueIdentifier>{c5b38ea9-202c-482e-947c-e37ea158b1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\MonsterStage\Boss">
+      <UniqueIdentifier>{5d50c983-1e6f-4f9b-bac9-8248310f304d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="InGameScene\Title">
+      <UniqueIdentifier>{8cc9ee76-060e-4439-b21f-875637206948}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

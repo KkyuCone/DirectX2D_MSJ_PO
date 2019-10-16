@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="STD">
+      <UniqueIdentifier>{8165706b-71dd-45cb-95de-80bd1a875295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{8f438c6c-38c8-466f-b07d-982b8843477c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MySp">
+      <UniqueIdentifier>{82e29e4f-9514-47f3-a548-a1d212f4c579}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog">
+      <UniqueIdentifier>{03e5519b-2cbf-4934-b0f3-57fbe1d4357e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BuildCore">
+      <UniqueIdentifier>{dcacb3fc-77a6-414c-8d37-cdf870830059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Tab">
+      <UniqueIdentifier>{ea3dfb55-8458-4129-a98b-15775c54fffb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dialog\Tab\Sub">
+      <UniqueIdentifier>{b167dc86-3b9a-4908-9781-19aebda24a8a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MainFrm.h">
+      <Filter>STD</Filter>
+    </ClInclude>
+    <ClInclude Include="MyTool.h">
+      <Filter>STD</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>STD</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>STD</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>STD</Filter>
+    </ClInclude>
+    <ClInclude Include="MySpWnd.h">
+      <Filter>MySp</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClientView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="MyToolView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolCoreBuilder.h">
+      <Filter>BuildCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolSceneScript.h">
+      <Filter>BuildCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolMenuDialog.h">
+      <Filter>Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="TabDialog.h">
+      <Filter>Dialog\Tab</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationDialog.h">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDialog.h">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteDialog.h">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>STD</Filter>
+    </ClCompile>
+    <ClCompile Include="MyTool.cpp">
+      <Filter>STD</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>STD</Filter>
+    </ClCompile>
+    <ClCompile Include="MySpWnd.cpp">
+      <Filter>MySp</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClientView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="MyToolView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolCoreBuilder.cpp">
+      <Filter>BuildCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolSceneScript.cpp">
+      <Filter>BuildCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolMenuDialog.cpp">
+      <Filter>Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="TabDialog.cpp">
+      <Filter>Dialog\Tab</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationDialog.cpp">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDialog.cpp">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteDialog.cpp">
+      <Filter>Dialog\Tab\Sub</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MyTool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MyTool.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MyTool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
